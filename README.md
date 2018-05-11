@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png">
+</p>
+
+<p align="center">
+<a href="https://packagist.org/packages/guesl/copilot"><img src="https://poser.pugx.org/guesl/copilot/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/guesl/copilot"><img src="https://poser.pugx.org/guesl/copilot/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/guesl/copilot"><img src="https://poser.pugx.org/guesl/copilot/license.svg" alt="License"></a>
+</p>
+
 ## 1. Install and config CoPilot.
 Card Connect CoPilot basic feature.
 
