@@ -29,7 +29,7 @@ class CoPilotServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/path/to/config/cardconnect.php' => config_path('cardconnect.php'),
+            __DIR__ . '/../config/cardconnect.php' => $this->app['path.config'] . DIRECTORY_SEPARATOR . 'cardconnect.php',
         ], "cardconnect");
     }
 
