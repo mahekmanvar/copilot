@@ -79,10 +79,12 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param int $billingPlanScheduleId
+     * @return BillingPlanSchedule
      */
-    public function setBillingPlanScheduleId(int $billingPlanScheduleId): void
+    public function setBillingPlanScheduleId(int $billingPlanScheduleId): BillingPlanSchedule
     {
         $this->billingPlanScheduleId = $billingPlanScheduleId;
+        return $this;
     }
 
     /**
@@ -95,10 +97,12 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param int $actualAmount
+     * @return BillingPlanSchedule
      */
-    public function setActualAmount(int $actualAmount): void
+    public function setActualAmount(int $actualAmount): BillingPlanSchedule
     {
         $this->actualAmount = $actualAmount;
+        return $this;
     }
 
     /**
@@ -111,10 +115,12 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param string $actualPaymentDate
+     * @return BillingPlanSchedule
      */
-    public function setActualPaymentDate(string $actualPaymentDate): void
+    public function setActualPaymentDate(string $actualPaymentDate): BillingPlanSchedule
     {
         $this->actualPaymentDate = $actualPaymentDate;
+        return $this;
     }
 
     /**
@@ -127,10 +133,12 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param string $paymentStatus
+     * @return BillingPlanSchedule
      */
-    public function setPaymentStatus(string $paymentStatus): void
+    public function setPaymentStatus(string $paymentStatus): BillingPlanSchedule
     {
         $this->paymentStatus = $paymentStatus;
+        return $this;
     }
 
     /**
@@ -143,10 +151,12 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param string $retref
+     * @return BillingPlanSchedule
      */
-    public function setRetref(string $retref): void
+    public function setRetref(string $retref): BillingPlanSchedule
     {
         $this->retref = $retref;
+        return $this;
     }
 
     /**
@@ -159,10 +169,12 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param float $scheduledAmount
+     * @return BillingPlanSchedule
      */
-    public function setScheduledAmount(float $scheduledAmount): void
+    public function setScheduledAmount(float $scheduledAmount): BillingPlanSchedule
     {
         $this->scheduledAmount = $scheduledAmount;
+        return $this;
     }
 
     /**
@@ -175,9 +187,11 @@ class BillingPlanSchedule extends Model
 
     /**
      * @param int $scheduledPaymentDate
+     * @return BillingPlanSchedule
      */
-    public function setScheduledPaymentDate(int $scheduledPaymentDate): void
+    public function setScheduledPaymentDate(int $scheduledPaymentDate): BillingPlanSchedule
     {
         $this->scheduledPaymentDate = $scheduledPaymentDate;
+        return $this;
     }
 }

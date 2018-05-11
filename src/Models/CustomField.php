@@ -31,10 +31,12 @@ class CustomField extends Model
 
     /**
      * @param int $userFieldNumber
+     * @return CustomField
      */
-    public function setUserFieldNumber(int $userFieldNumber): void
+    public function setUserFieldNumber(int $userFieldNumber): CustomField
     {
         $this->userFieldNumber = $userFieldNumber;
+        return $this;
     }
 
     /**
@@ -47,9 +49,11 @@ class CustomField extends Model
 
     /**
      * @param int $customFieldValue
+     * @return CustomField
      */
-    public function setCustomFieldValue(int $customFieldValue): void
+    public function setCustomFieldValue(int $customFieldValue): TYPE_NAME
     {
         $this->customFieldValue = $customFieldValue;
+        return $this;
     }
 }

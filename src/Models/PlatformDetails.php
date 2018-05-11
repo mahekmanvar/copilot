@@ -167,10 +167,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $backEndMid
+     * @return PlatformDetails
      */
-    public function setBackEndMid(string $backEndMid): void
+    public function setBackEndMid(string $backEndMid): PlatformDetails
     {
         $this->backEndMid = $backEndMid;
+        return $this;
     }
 
     /**
@@ -183,10 +185,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $frontEndMid
+     * @return PlatformDetails
      */
-    public function setFrontEndMid(string $frontEndMid): void
+    public function setFrontEndMid(string $frontEndMid): PlatformDetails
     {
         $this->frontEndMid = $frontEndMid;
+        return $this;
     }
 
     /**
@@ -199,10 +203,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $processorReportingMid
+     * @return PlatformDetails
      */
-    public function setProcessorReportingMid(string $processorReportingMid): void
+    public function setProcessorReportingMid(string $processorReportingMid): PlatformDetails
     {
         $this->processorReportingMid = $processorReportingMid;
+        return $this;
     }
 
     /**
@@ -215,10 +221,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $backEndPlatform
+     * @return PlatformDetails
      */
-    public function setBackEndPlatform(string $backEndPlatform): void
+    public function setBackEndPlatform(string $backEndPlatform): PlatformDetails
     {
         $this->backEndPlatform = $backEndPlatform;
+        return $this;
     }
 
     /**
@@ -231,10 +239,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $frontEndPlatformCd
+     * @return PlatformDetails
      */
-    public function setFrontEndPlatformCd(string $frontEndPlatformCd): void
+    public function setFrontEndPlatformCd(string $frontEndPlatformCd): PlatformDetails
     {
         $this->frontEndPlatformCd = $frontEndPlatformCd;
+        return $this;
     }
 
     /**
@@ -247,10 +257,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $amexProgramAssetCd
+     * @return PlatformDetails
      */
-    public function setAmexProgramAssetCd(string $amexProgramAssetCd): void
+    public function setAmexProgramAssetCd(string $amexProgramAssetCd): PlatformDetails
     {
         $this->amexProgramAssetCd = $amexProgramAssetCd;
+        return $this;
     }
 
     /**
@@ -263,10 +275,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $amexProgramMid
+     * @return PlatformDetails
      */
-    public function setAmexProgramMid(string $amexProgramMid): void
+    public function setAmexProgramMid(string $amexProgramMid): PlatformDetails
     {
         $this->amexProgramMid = $amexProgramMid;
+        return $this;
     }
 
     /**
@@ -279,10 +293,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $discoverMid
+     * @return PlatformDetails
      */
-    public function setDiscoverMid(string $discoverMid): void
+    public function setDiscoverMid(string $discoverMid): PlatformDetails
     {
         $this->discoverMid = $discoverMid;
+        return $this;
     }
 
     /**
@@ -295,10 +311,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $discoverProgramCd
+     * @return PlatformDetails
      */
-    public function setDiscoverProgramCd(string $discoverProgramCd): void
+    public function setDiscoverProgramCd(string $discoverProgramCd): PlatformDetails
     {
         $this->discoverProgramCd = $discoverProgramCd;
+        return $this;
     }
 
     /**
@@ -311,10 +329,12 @@ class PlatformDetails extends Model
 
     /**
      * @param bool $acquiringFlg
+     * @return PlatformDetails
      */
-    public function setAcquiringFlg(bool $acquiringFlg): void
+    public function setAcquiringFlg(bool $acquiringFlg): PlatformDetails
     {
         $this->acquiringFlg = $acquiringFlg;
+        return $this;
     }
 
     /**
@@ -327,10 +347,12 @@ class PlatformDetails extends Model
 
     /**
      * @param int $taxId
+     * @return PlatformDetails
      */
-    public function setTaxId(int $taxId): void
+    public function setTaxId(int $taxId): PlatformDetails
     {
         $this->taxId = $taxId;
+        return $this;
     }
 
     /**
@@ -343,10 +365,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $tid
+     * @return PlatformDetails
      */
-    public function setTid(string $tid): void
+    public function setTid(string $tid): PlatformDetails
     {
         $this->tid = $tid;
+        return $this;
     }
 
     /**
@@ -359,10 +383,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $busnsId
+     * @return PlatformDetails
      */
-    public function setBusnsId(string $busnsId): void
+    public function setBusnsId(string $busnsId): PlatformDetails
     {
         $this->busnsId = $busnsId;
+        return $this;
     }
 
     /**
@@ -375,10 +401,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $busnsIdPlaceOfIssue
+     * @return PlatformDetails
      */
-    public function setBusnsIdPlaceOfIssue(string $busnsIdPlaceOfIssue): void
+    public function setBusnsIdPlaceOfIssue(string $busnsIdPlaceOfIssue): PlatformDetails
     {
         $this->busnsIdPlaceOfIssue = $busnsIdPlaceOfIssue;
+        return $this;
     }
 
     /**
@@ -391,10 +419,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $currencyCode
+     * @return PlatformDetails
      */
-    public function setCurrencyCode(string $currencyCode): void
+    public function setCurrencyCode(string $currencyCode): PlatformDetails
     {
         $this->currencyCode = $currencyCode;
+        return $this;
     }
 
     /**
@@ -407,10 +437,12 @@ class PlatformDetails extends Model
 
     /**
      * @param string $mccId
+     * @return PlatformDetails
      */
-    public function setMccId(string $mccId): void
+    public function setMccId(string $mccId): PlatformDetails
     {
         $this->mccId = $mccId;
+        return $this;
     }
 
     /**
@@ -423,9 +455,11 @@ class PlatformDetails extends Model
 
     /**
      * @param string $businessDescription
+     * @return PlatformDetails
      */
-    public function setBusinessDescription(string $businessDescription): void
+    public function setBusinessDescription(string $businessDescription): PlatformDetails
     {
         $this->businessDescription = $businessDescription;
+        return $this;
     }
 }

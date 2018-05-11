@@ -49,10 +49,12 @@ class Processing extends Model
 
     /**
      * @param PlatformDetails $platformDetails
+     * @return Processing
      */
-    public function setPlatformDetails(PlatformDetails $platformDetails): void
+    public function setPlatformDetails(PlatformDetails $platformDetails): Processing
     {
         $this->platformDetails = $platformDetails;
+        return $this;
     }
 
     /**
@@ -65,10 +67,12 @@ class Processing extends Model
 
     /**
      * @param BusinessDetails $businessDetails
+     * @return Processing
      */
-    public function setBusinessDetails(BusinessDetails $businessDetails): void
+    public function setBusinessDetails(BusinessDetails $businessDetails): Processing
     {
         $this->businessDetails = $businessDetails;
+        return $this;
     }
 
     /**
@@ -81,10 +85,12 @@ class Processing extends Model
 
     /**
      * @param VolumeDetails $volumeDetails
+     * @return Processing
      */
-    public function setVolumeDetails(VolumeDetails $volumeDetails): void
+    public function setVolumeDetails(VolumeDetails $volumeDetails): Processing
     {
         $this->volumeDetails = $volumeDetails;
+        return $this;
     }
 
     /**
@@ -97,10 +103,12 @@ class Processing extends Model
 
     /**
      * @param DeliveryDetails $deliveryPercentages
+     * @return Processing
      */
-    public function setDeliveryPercentages(DeliveryDetails $deliveryPercentages): void
+    public function setDeliveryPercentages(DeliveryDetails $deliveryPercentages): Processing
     {
         $this->deliveryPercentages = $deliveryPercentages;
+        return $this;
     }
 
     /**
@@ -113,10 +121,12 @@ class Processing extends Model
 
     /**
      * @param TransactionDetails $modeOfTransaction
+     * @return Processing
      */
-    public function setModeOfTransaction(TransactionDetails $modeOfTransaction): void
+    public function setModeOfTransaction(TransactionDetails $modeOfTransaction): Processing
     {
         $this->modeOfTransaction = $modeOfTransaction;
+        return $this;
     }
 
 }

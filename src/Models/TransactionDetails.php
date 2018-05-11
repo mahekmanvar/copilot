@@ -50,10 +50,12 @@ class TransactionDetails extends Model
 
     /**
      * @param int $eCommercePct
+     * @return TransactionDetails
      */
-    public function setECommercePct(int $eCommercePct): void
+    public function setECommercePct(int $eCommercePct): TransactionDetails
     {
         $this->eCommercePct = $eCommercePct;
+        return $this;
     }
 
     /**
@@ -66,10 +68,12 @@ class TransactionDetails extends Model
 
     /**
      * @param int $keyedPct
+     * @return TransactionDetails
      */
-    public function setKeyedPct(int $keyedPct): void
+    public function setKeyedPct(int $keyedPct): TransactionDetails
     {
         $this->keyedPct = $keyedPct;
+        return $this;
     }
 
     /**
@@ -82,10 +86,12 @@ class TransactionDetails extends Model
 
     /**
      * @param int $mailOrderPct
+     * @return TransactionDetails
      */
-    public function setMailOrderPct(int $mailOrderPct): void
+    public function setMailOrderPct(int $mailOrderPct): TransactionDetails
     {
         $this->mailOrderPct = $mailOrderPct;
+        return $this;
     }
 
     /**
@@ -98,9 +104,11 @@ class TransactionDetails extends Model
 
     /**
      * @param int $swipedPct
+     * @return TransactionDetails
      */
-    public function setSwipedPct(int $swipedPct): void
+    public function setSwipedPct(int $swipedPct): TransactionDetails
     {
         $this->swipedPct = $swipedPct;
+        return $this;
     }
 }

@@ -44,10 +44,12 @@ class ICPlusPricing extends Model
 
     /**
      * @param float $amexOptBlueQualDiscountPct
+     * @return ICPlusPricing
      */
-    public function setAmexOptBlueQualDiscountPct(float $amexOptBlueQualDiscountPct): void
+    public function setAmexOptBlueQualDiscountPct(float $amexOptBlueQualDiscountPct): ICPlusPricing
     {
         $this->amexOptBlueQualDiscountPct = $amexOptBlueQualDiscountPct;
+        return $this;
     }
 
     /**
@@ -60,10 +62,12 @@ class ICPlusPricing extends Model
 
     /**
      * @param float $discoverQualCreditDiscountPct
+     * @return ICPlusPricing
      */
-    public function setDiscoverQualCreditDiscountPct(float $discoverQualCreditDiscountPct): void
+    public function setDiscoverQualCreditDiscountPct(float $discoverQualCreditDiscountPct): ICPlusPricing
     {
         $this->discoverQualCreditDiscountPct = $discoverQualCreditDiscountPct;
+        return $this;
     }
 
     /**
@@ -76,10 +80,12 @@ class ICPlusPricing extends Model
 
     /**
      * @param float $mastercardQualCreditDiscountPct
+     * @return ICPlusPricing
      */
-    public function setMastercardQualCreditDiscountPct(float $mastercardQualCreditDiscountPct): void
+    public function setMastercardQualCreditDiscountPct(float $mastercardQualCreditDiscountPct): ICPlusPricing
     {
         $this->mastercardQualCreditDiscountPct = $mastercardQualCreditDiscountPct;
+        return $this;
     }
 
     /**
@@ -92,10 +98,12 @@ class ICPlusPricing extends Model
 
     /**
      * @param float $visaQualCreditDiscountPct
+     * @return ICPlusPricing
      */
-    public function setVisaQualCreditDiscountPct(float $visaQualCreditDiscountPct): void
+    public function setVisaQualCreditDiscountPct(float $visaQualCreditDiscountPct): ICPlusPricing
     {
         $this->visaQualCreditDiscountPct = $visaQualCreditDiscountPct;
+        return $this;
     }
 
     /**

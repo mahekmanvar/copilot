@@ -55,10 +55,12 @@ class SignatureStatus extends Model
 
     /**
      * @param string $signatureUrl
+     * @return SignatureStatus
      */
-    public function setSignatureUrl(string $signatureUrl): void
+    public function setSignatureUrl(string $signatureUrl): SignatureStatus
     {
         $this->signatureUrl = $signatureUrl;
+        return $this;
     }
 
     /**
@@ -71,10 +73,12 @@ class SignatureStatus extends Model
 
     /**
      * @param string $signedSiteUserId
+     * @return SignatureStatus
      */
-    public function setSignedSiteUserId(string $signedSiteUserId): void
+    public function setSignedSiteUserId(string $signedSiteUserId): SignatureStatus
     {
         $this->signedSiteUserId = $signedSiteUserId;
+        return $this;
     }
 
     /**
@@ -87,10 +91,12 @@ class SignatureStatus extends Model
 
     /**
      * @param string $signedDateTime
+     * @return SignatureStatus
      */
-    public function setSignedDateTime(string $signedDateTime): void
+    public function setSignedDateTime(string $signedDateTime): SignatureStatus
     {
         $this->signedDateTime = $signedDateTime;
+        return $this;
     }
 
     /**
@@ -103,10 +109,12 @@ class SignatureStatus extends Model
 
     /**
      * @param string $signer
+     * @return SignatureStatus
      */
-    public function setSigner(string $signer): void
+    public function setSigner(string $signer): SignatureStatus
     {
         $this->signer = $signer;
+        return $this;
     }
 
     /**
@@ -119,9 +127,11 @@ class SignatureStatus extends Model
 
     /**
      * @param string $signatureStatusCd
+     * @return SignatureStatus
      */
-    public function setSignatureStatusCd(string $signatureStatusCd): void
+    public function setSignatureStatusCd(string $signatureStatusCd): SignatureStatus
     {
         $this->signatureStatusCd = $signatureStatusCd;
+        return $this;
     }
 }

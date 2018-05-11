@@ -83,10 +83,12 @@ class Owner extends Model
 
     /**
      * @param Address $ownerAddress
+     * @return Owner
      */
-    public function setOwnerAddress(Address $ownerAddress): void
+    public function setOwnerAddress(Address $ownerAddress): Owner
     {
         $this->ownerAddress = $ownerAddress;
+        return $this;
     }
 
     /**
@@ -99,10 +101,12 @@ class Owner extends Model
 
     /**
      * @param string $ownerEmail
+     * @return Owner
      */
-    public function setOwnerEmail(string $ownerEmail): void
+    public function setOwnerEmail(string $ownerEmail): Owner
     {
         $this->ownerEmail = $ownerEmail;
+        return $this;
     }
 
     /**
@@ -115,10 +119,12 @@ class Owner extends Model
 
     /**
      * @param string $ownerName
+     * @return Owner
      */
-    public function setOwnerName(string $ownerName): void
+    public function setOwnerName(string $ownerName): Owner
     {
         $this->ownerName = $ownerName;
+        return $this;
     }
 
     /**
@@ -131,10 +137,12 @@ class Owner extends Model
 
     /**
      * @param string $ownerDob
+     * @return Owner
      */
-    public function setOwnerDob(string $ownerDob): void
+    public function setOwnerDob(string $ownerDob): Owner
     {
         $this->ownerDob = $ownerDob;
+        return $this;
     }
 
     /**
@@ -147,10 +155,12 @@ class Owner extends Model
 
     /**
      * @param string $ownerPhone
+     * @return Owner
      */
-    public function setOwnerPhone(string $ownerPhone): void
+    public function setOwnerPhone(string $ownerPhone): Owner
     {
         $this->ownerPhone = $ownerPhone;
+        return $this;
     }
 
     /**
@@ -163,10 +173,12 @@ class Owner extends Model
 
     /**
      * @param string $ownerMobilePhone
+     * @return Owner
      */
-    public function setOwnerMobilePhone(string $ownerMobilePhone): void
+    public function setOwnerMobilePhone(string $ownerMobilePhone): Owner
     {
         $this->ownerMobilePhone = $ownerMobilePhone;
+        return $this;
     }
 
     /**
@@ -179,10 +191,12 @@ class Owner extends Model
 
     /**
      * @param string $ownerSSN
+     * @return Owner
      */
-    public function setOwnerSSN(string $ownerSSN): void
+    public function setOwnerSSN(string $ownerSSN): Owner
     {
         $this->ownerSSN = $ownerSSN;
+        return $this;
     }
 
     /**
@@ -195,9 +209,11 @@ class Owner extends Model
 
     /**
      * @param string $ownerTitle
+     * @return Owner
      */
-    public function setOwnerTitle(string $ownerTitle): void
+    public function setOwnerTitle(string $ownerTitle): Owner
     {
         $this->ownerTitle = $ownerTitle;
+        return $this;
     }
 }

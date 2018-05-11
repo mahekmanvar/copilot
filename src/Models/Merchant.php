@@ -161,10 +161,12 @@ class Merchant extends Model
 
     /**
      * @param string $akaBusinessName
+     * @return Merchant
      */
-    public function setAkaBusinessName(string $akaBusinessName): void
+    public function setAkaBusinessName(string $akaBusinessName): Merchant
     {
         $this->akaBusinessName = $akaBusinessName;
+        return $this;
     }
 
     /**
@@ -177,10 +179,12 @@ class Merchant extends Model
 
     /**
      * @param bool $custPrimaryAcctFlg
+     * @return Merchant
      */
-    public function setCustPrimaryAcctFlg(bool $custPrimaryAcctFlg): void
+    public function setCustPrimaryAcctFlg(bool $custPrimaryAcctFlg): Merchant
     {
         $this->custPrimaryAcctFlg = $custPrimaryAcctFlg;
+        return $this;
     }
 
     /**
@@ -193,10 +197,12 @@ class Merchant extends Model
 
     /**
      * @param string $dbaName
+     * @return Merchant
      */
-    public function setDbaName(string $dbaName): void
+    public function setDbaName(string $dbaName): Merchant
     {
         $this->dbaName = $dbaName;
+        return $this;
     }
 
     /**
@@ -209,10 +215,12 @@ class Merchant extends Model
 
     /**
      * @param string $legalBusinessName
+     * @return Merchant
      */
-    public function setLegalBusinessName(string $legalBusinessName): void
+    public function setLegalBusinessName(string $legalBusinessName): Merchant
     {
         $this->legalBusinessName = $legalBusinessName;
+        return $this;
     }
 
     /**
@@ -225,10 +233,12 @@ class Merchant extends Model
 
     /**
      * @param string $taxFilingMethod
+     * @return Merchant
      */
-    public function setTaxFilingMethod(string $taxFilingMethod): void
+    public function setTaxFilingMethod(string $taxFilingMethod): Merchant
     {
         $this->taxFilingMethod = $taxFilingMethod;
+        return $this;
     }
 
     /**
@@ -241,10 +251,12 @@ class Merchant extends Model
 
     /**
      * @param string $taxFilingName
+     * @return Merchant
      */
-    public function setTaxFilingName(string $taxFilingName): void
+    public function setTaxFilingName(string $taxFilingName): Merchant
     {
         $this->taxFilingName = $taxFilingName;
+        return $this;
     }
 
     /**
@@ -257,10 +269,12 @@ class Merchant extends Model
 
     /**
      * @param Demographic $demographic
+     * @return Merchant
      */
-    public function setDemographic(Demographic $demographic): void
+    public function setDemographic(Demographic $demographic): Merchant
     {
         $this->demographic = $demographic;
+        return $this;
     }
 
     /**
@@ -273,10 +287,12 @@ class Merchant extends Model
 
     /**
      * @param string $businessIdTypeCd
+     * @return Merchant
      */
-    public function setBusinessIdTypeCd(string $businessIdTypeCd): void
+    public function setBusinessIdTypeCd(string $businessIdTypeCd): Merchant
     {
         $this->businessIdTypeCd = $businessIdTypeCd;
+        return $this;
     }
 
     /**
@@ -289,10 +305,12 @@ class Merchant extends Model
 
     /**
      * @param string $businessStartDate
+     * @return Merchant
      */
-    public function setBusinessStartDate(string $businessStartDate): void
+    public function setBusinessStartDate(string $businessStartDate): Merchant
     {
         $this->businessStartDate = $businessStartDate;
+        return $this;
     }
 
     /**
@@ -305,10 +323,12 @@ class Merchant extends Model
 
     /**
      * @param BankDetail $bankDetail
+     * @return Merchant
      */
-    public function setBankDetail(BankDetail $bankDetail): void
+    public function setBankDetail(BankDetail $bankDetail): Merchant
     {
         $this->bankDetail = $bankDetail;
+        return $this;
     }
 
     /**
@@ -321,10 +341,12 @@ class Merchant extends Model
 
     /**
      * @param OwnerShip $ownership
+     * @return Merchant
      */
-    public function setOwnership(OwnerShip $ownership): void
+    public function setOwnership(OwnerShip $ownership): Merchant
     {
         $this->ownership = $ownership;
+        return $this;
     }
 
     /**
@@ -337,10 +359,12 @@ class Merchant extends Model
 
     /**
      * @param MerchantContactInfo $merchantContactInfo
+     * @return Merchant
      */
-    public function setMerchantContactInfo(MerchantContactInfo $merchantContactInfo): void
+    public function setMerchantContactInfo(MerchantContactInfo $merchantContactInfo): Merchant
     {
         $this->merchantContactInfo = $merchantContactInfo;
+        return $this;
     }
 
     /**
@@ -353,10 +377,12 @@ class Merchant extends Model
 
     /**
      * @param string $salesCode
+     * @return Merchant
      */
-    public function setSalesCode(string $salesCode): void
+    public function setSalesCode(string $salesCode): Merchant
     {
         $this->salesCode = $salesCode;
+        return $this;
     }
 
     /**
@@ -369,10 +395,12 @@ class Merchant extends Model
 
     /**
      * @param Processing $processing
+     * @return Merchant
      */
-    public function setProcessing(Processing $processing): void
+    public function setProcessing(Processing $processing): Merchant
     {
         $this->processing = $processing;
+        return $this;
     }
 
     /**
@@ -385,10 +413,12 @@ class Merchant extends Model
 
     /**
      * @param bool $webLeadFlg
+     * @return Merchant
      */
-    public function setWebLeadFlg(bool $webLeadFlg): void
+    public function setWebLeadFlg(bool $webLeadFlg): Merchant
     {
         $this->webLeadFlg = $webLeadFlg;
+        return $this;
     }
 
     /**
@@ -401,10 +431,12 @@ class Merchant extends Model
 
     /**
      * @param Pricing $pricing
+     * @return Merchant
      */
-    public function setPricing(Pricing $pricing): void
+    public function setPricing(Pricing $pricing): Merchant
     {
         $this->pricing = $pricing;
+        return $this;
     }
 
     /**
@@ -417,10 +449,12 @@ class Merchant extends Model
 
     /**
      * @param Fee $fee
+     * @return Merchant
      */
-    public function setFee(Fee $fee): void
+    public function setFee(Fee $fee): Merchant
     {
         $this->fee = $fee;
+        return $this;
     }
 
     /**
@@ -433,9 +467,11 @@ class Merchant extends Model
 
     /**
      * @param array $customFields
+     * @return Merchant
      */
-    public function setCustomFields(array $customFields): void
+    public function setCustomFields(array $customFields): Merchant
     {
         $this->customFields = $customFields;
+        return $this;
     }
 }

@@ -123,10 +123,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param Address $shippingAddress
+     * @return OrderShippingDetail
      */
-    public function setShippingAddress(Address $shippingAddress): void
+    public function setShippingAddress(Address $shippingAddress): OrderShippingDetail
     {
         $this->shippingAddress = $shippingAddress;
+        return $this;
     }
 
     /**
@@ -139,10 +141,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $shipToAttn
+     * @return OrderShippingDetail
      */
-    public function setShipToAttn(string $shipToAttn): void
+    public function setShipToAttn(string $shipToAttn): OrderShippingDetail
     {
         $this->shipToAttn = $shipToAttn;
+        return $this;
     }
 
     /**
@@ -155,10 +159,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $shipToAttnEmail
+     * @return OrderShippingDetail
      */
-    public function setShipToAttnEmail(string $shipToAttnEmail): void
+    public function setShipToAttnEmail(string $shipToAttnEmail): OrderShippingDetail
     {
         $this->shipToAttnEmail = $shipToAttnEmail;
+        return $this;
     }
 
     /**
@@ -171,10 +177,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $shippingMethodCd
+     * @return OrderShippingDetail
      */
-    public function setShippingMethodCd(string $shippingMethodCd): void
+    public function setShippingMethodCd(string $shippingMethodCd): OrderShippingDetail
     {
         $this->shippingMethodCd = $shippingMethodCd;
+        return $this;
     }
 
     /**
@@ -187,10 +195,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $shippingBillToCd
+     * @return OrderShippingDetail
      */
-    public function setShippingBillToCd(string $shippingBillToCd): void
+    public function setShippingBillToCd(string $shippingBillToCd): OrderShippingDetail
     {
         $this->shippingBillToCd = $shippingBillToCd;
+        return $this;
     }
 
     /**
@@ -203,10 +213,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $shippingCarrierCd
+     * @return OrderShippingDetail
      */
-    public function setShippingCarrierCd(string $shippingCarrierCd): void
+    public function setShippingCarrierCd(string $shippingCarrierCd): OrderShippingDetail
     {
         $this->shippingCarrierCd = $shippingCarrierCd;
+        return $this;
     }
 
     /**
@@ -219,10 +231,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $trackingNumber
+     * @return OrderShippingDetail
      */
-    public function setTrackingNumber(string $trackingNumber): void
+    public function setTrackingNumber(string $trackingNumber): OrderShippingDetail
     {
         $this->trackingNumber = $trackingNumber;
+        return $this;
     }
 
     /**
@@ -235,10 +249,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param float $shippingCost
+     * @return OrderShippingDetail
      */
-    public function setShippingCost(float $shippingCost): void
+    public function setShippingCost(float $shippingCost): OrderShippingDetail
     {
         $this->shippingCost = $shippingCost;
+        return $this;
     }
 
     /**
@@ -251,10 +267,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $merchantContactPhone
+     * @return OrderShippingDetail
      */
-    public function setMerchantContactPhone(string $merchantContactPhone): void
+    public function setMerchantContactPhone(string $merchantContactPhone): OrderShippingDetail
     {
         $this->merchantContactPhone = $merchantContactPhone;
+        return $this;
     }
 
     /**
@@ -267,10 +285,12 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $merchantContactPhoneExt
+     * @return OrderShippingDetail
      */
-    public function setMerchantContactPhoneExt(string $merchantContactPhoneExt): void
+    public function setMerchantContactPhoneExt(string $merchantContactPhoneExt): OrderShippingDetail
     {
         $this->merchantContactPhoneExt = $merchantContactPhoneExt;
+        return $this;
     }
 
     /**
@@ -283,9 +303,11 @@ class OrderShippingDetail extends Model
 
     /**
      * @param string $poNumber
+     * @return OrderShippingDetail
      */
-    public function setPoNumber(string $poNumber): void
+    public function setPoNumber(string $poNumber): OrderShippingDetail
     {
         $this->poNumber = $poNumber;
+        return $this;
     }
 }

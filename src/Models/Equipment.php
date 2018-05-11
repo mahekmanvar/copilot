@@ -139,10 +139,12 @@ class Equipment extends Model
 
     /**
      * @param int $equipmentId
+     * @return Equipment
      */
-    public function setEquipmentId(int $equipmentId): void
+    public function setEquipmentId(int $equipmentId): Equipment
     {
         $this->equipmentId = $equipmentId;
+        return $this;
     }
 
     /**
@@ -155,10 +157,12 @@ class Equipment extends Model
 
     /**
      * @param string $equipmentName
+     * @return Equipment
      */
-    public function setEquipmentName(string $equipmentName): void
+    public function setEquipmentName(string $equipmentName): Equipment
     {
         $this->equipmentName = $equipmentName;
+        return $this;
     }
 
     /**
@@ -171,10 +175,12 @@ class Equipment extends Model
 
     /**
      * @param string $description
+     * @return Equipment
      */
-    public function setDescription(string $description): void
+    public function setDescription(string $description): Equipment
     {
         $this->description = $description;
+        return $this;
     }
 
     /**
@@ -187,10 +193,12 @@ class Equipment extends Model
 
     /**
      * @param string $make
+     * @return Equipment
      */
-    public function setMake(string $make): void
+    public function setMake(string $make): Equipment
     {
         $this->make = $make;
+        return $this;
     }
 
     /**
@@ -203,10 +211,12 @@ class Equipment extends Model
 
     /**
      * @param string $model
+     * @return Equipment
      */
-    public function setModel(string $model): void
+    public function setModel(string $model): Equipment
     {
         $this->model = $model;
+        return $this;
     }
 
     /**
@@ -219,10 +229,12 @@ class Equipment extends Model
 
     /**
      * @param string $imageUrl
+     * @return Equipment
      */
-    public function setImageUrl(string $imageUrl): void
+    public function setImageUrl(string $imageUrl): Equipment
     {
         $this->imageUrl = $imageUrl;
+        return $this;
     }
 
     /**
@@ -235,10 +247,12 @@ class Equipment extends Model
 
     /**
      * @param string $sku
+     * @return Equipment
      */
-    public function setSku(string $sku): void
+    public function setSku(string $sku): Equipment
     {
         $this->sku = $sku;
+        return $this;
     }
 
     /**
@@ -251,10 +265,12 @@ class Equipment extends Model
 
     /**
      * @param string $platformCd
+     * @return Equipment
      */
-    public function setPlatformCd(string $platformCd): void
+    public function setPlatformCd(string $platformCd): Equipment
     {
         $this->platformCd = $platformCd;
+        return $this;
     }
 
     /**
@@ -267,10 +283,12 @@ class Equipment extends Model
 
     /**
      * @param string $equipmentTypeCd
+     * @return Equipment
      */
-    public function setEquipmentTypeCd(string $equipmentTypeCd): void
+    public function setEquipmentTypeCd(string $equipmentTypeCd): Equipment
     {
         $this->equipmentTypeCd = $equipmentTypeCd;
+        return $this;
     }
 
     /**
@@ -283,10 +301,12 @@ class Equipment extends Model
 
     /**
      * @param string $quipmentSupplierCd
+     * @return Equipment
      */
-    public function setQuipmentSupplierCd(string $quipmentSupplierCd): void
+    public function setQuipmentSupplierCd(string $quipmentSupplierCd): Equipment
     {
         $this->quipmentSupplierCd = $quipmentSupplierCd;
+        return $this;
     }
 
     /**
@@ -299,10 +319,12 @@ class Equipment extends Model
 
     /**
      * @param string $defaultPrice
+     * @return Equipment
      */
-    public function setDefaultPrice(string $defaultPrice): void
+    public function setDefaultPrice(string $defaultPrice): Equipment
     {
         $this->defaultPrice = $defaultPrice;
+        return $this;
     }
 
     /**
@@ -315,10 +337,12 @@ class Equipment extends Model
 
     /**
      * @param string $defaultPlanPrice
+     * @return Equipment
      */
-    public function setDefaultPlanPrice(string $defaultPlanPrice): void
+    public function setDefaultPlanPrice(string $defaultPlanPrice): Equipment
     {
         $this->defaultPlanPrice = $defaultPlanPrice;
+        return $this;
     }
 
     /**
@@ -331,10 +355,12 @@ class Equipment extends Model
 
     /**
      * @param string $allowCustomBillingFlg
+     * @return Equipment
      */
-    public function setAllowCustomBillingFlg(string $allowCustomBillingFlg): void
+    public function setAllowCustomBillingFlg(string $allowCustomBillingFlg): Equipment
     {
         $this->allowCustomBillingFlg = $allowCustomBillingFlg;
+        return $this;
     }
 
     /**
@@ -347,10 +373,12 @@ class Equipment extends Model
 
     /**
      * @param string $standardShippingPrice
+     * @return Equipment
      */
-    public function setStandardShippingPrice(string $standardShippingPrice): void
+    public function setStandardShippingPrice(string $standardShippingPrice): Equipment
     {
         $this->standardShippingPrice = $standardShippingPrice;
+        return $this;
     }
 
     /**
@@ -363,9 +391,11 @@ class Equipment extends Model
 
     /**
      * @param string $expeditedShippingPrice
+     * @return Equipment
      */
-    public function setExpeditedShippingPrice(string $expeditedShippingPrice): void
+    public function setExpeditedShippingPrice(string $expeditedShippingPrice): Equipment
     {
         $this->expeditedShippingPrice = $expeditedShippingPrice;
+        return $this;
     }
 }

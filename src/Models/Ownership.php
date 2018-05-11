@@ -58,10 +58,12 @@ class Ownership extends Model
 
     /**
      * @param Owner $owner
+     * @return Ownership
      */
-    public function setOwner(Owner $owner): void
+    public function setOwner(Owner $owner): Ownership
     {
         $this->owner = $owner;
+        return $this;
     }
 
     /**
@@ -74,10 +76,12 @@ class Ownership extends Model
 
     /**
      * @param string $ownershipTypeCd
+     * @return Ownership
      */
-    public function setOwnershipTypeCd(string $ownershipTypeCd): void
+    public function setOwnershipTypeCd(string $ownershipTypeCd): Ownership
     {
         $this->ownershipTypeCd = $ownershipTypeCd;
+        return $this;
     }
 
     /**
@@ -90,10 +94,12 @@ class Ownership extends Model
 
     /**
      * @param string $driversLicenseNumber
+     * @return Ownership
      */
-    public function setDriversLicenseNumber(string $driversLicenseNumber): void
+    public function setDriversLicenseNumber(string $driversLicenseNumber): Ownership
     {
         $this->driversLicenseNumber = $driversLicenseNumber;
+        return $this;
     }
 
     /**
@@ -106,10 +112,12 @@ class Ownership extends Model
 
     /**
      * @param string $driversLicenseStateCd
+     * @return Ownership
      */
-    public function setDriversLicenseStateCd(string $driversLicenseStateCd): void
+    public function setDriversLicenseStateCd(string $driversLicenseStateCd): Ownership
     {
         $this->driversLicenseStateCd = $driversLicenseStateCd;
+        return $this;
     }
 
     /**
@@ -122,9 +130,11 @@ class Ownership extends Model
 
     /**
      * @param int $ownerOwnershipPct
+     * @return Ownership
      */
-    public function setOwnerOwnershipPct(int $ownerOwnershipPct): void
+    public function setOwnerOwnershipPct(int $ownerOwnershipPct): Ownership
     {
         $this->ownerOwnershipPct = $ownerOwnershipPct;
+        return $this;
     }
 }

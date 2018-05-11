@@ -28,10 +28,12 @@ class BankDetail extends Model
 
     /**
      * @param Bank $depositBank
+     * @return BankDetail
      */
-    public function setDepositBank(Bank $depositBank): void
+    public function setDepositBank(Bank $depositBank): BankDetail
     {
         $this->depositBank = $depositBank;
+        return $this;
     }
 
     /**
@@ -44,9 +46,11 @@ class BankDetail extends Model
 
     /**
      * @param Bank $withdrawalBank
+     * @return BankDetail
      */
-    public function setWithdrawalBank(Bank $withdrawalBank): void
+    public function setWithdrawalBank(Bank $withdrawalBank): BankDetail
     {
         $this->withdrawalBank = $withdrawalBank;
+        return $this;
     }
 }

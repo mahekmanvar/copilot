@@ -79,10 +79,12 @@ class Demographic extends Model
 
     /**
      * @param string $businessIncorporatedStateCd
+     * @return Demographic
      */
-    public function setBusinessIncorporatedStateCd(string $businessIncorporatedStateCd): void
+    public function setBusinessIncorporatedStateCd(string $businessIncorporatedStateCd): Demographic
     {
         $this->businessIncorporatedStateCd = $businessIncorporatedStateCd;
+        return $this;
     }
 
     /**
@@ -95,10 +97,12 @@ class Demographic extends Model
 
     /**
      * @param string $merchantTimeZone
+     * @return Demographic
      */
-    public function setMerchantTimeZone(string $merchantTimeZone): void
+    public function setMerchantTimeZone(string $merchantTimeZone): Demographic
     {
         $this->merchantTimeZone = $merchantTimeZone;
+        return $this;
     }
 
     /**
@@ -111,10 +115,12 @@ class Demographic extends Model
 
     /**
      * @param string $websiteAddress
+     * @return Demographic
      */
-    public function setWebsiteAddress(string $websiteAddress): void
+    public function setWebsiteAddress(string $websiteAddress): Demographic
     {
         $this->websiteAddress = $websiteAddress;
+        return $this;
     }
 
     /**
@@ -127,10 +133,12 @@ class Demographic extends Model
 
     /**
      * @param string $businessPhone
+     * @return Demographic
      */
-    public function setBusinessPhone(string $businessPhone): void
+    public function setBusinessPhone(string $businessPhone): Demographic
     {
         $this->businessPhone = $businessPhone;
+        return $this;
     }
 
     /**
@@ -143,10 +151,12 @@ class Demographic extends Model
 
     /**
      * @param string $businessFax
+     * @return Demographic
      */
-    public function setBusinessFax(string $businessFax): void
+    public function setBusinessFax(string $businessFax): Demographic
     {
         $this->businessFax = $businessFax;
+        return $this;
     }
 
     /**
@@ -159,10 +169,12 @@ class Demographic extends Model
 
     /**
      * @param Address $businessAddress
+     * @return Demographic
      */
-    public function setBusinessAddress(Address $businessAddress): void
+    public function setBusinessAddress(Address $businessAddress): Demographic
     {
         $this->businessAddress = $businessAddress;
+        return $this;
     }
 
     /**
@@ -175,9 +187,11 @@ class Demographic extends Model
 
     /**
      * @param Address $mailingAddress
+     * @return Demographic
      */
-    public function setMailingAddress(Address $mailingAddress): void
+    public function setMailingAddress(Address $mailingAddress): Demographic
     {
         $this->mailingAddress = $mailingAddress;
+        return $this;
     }
 }

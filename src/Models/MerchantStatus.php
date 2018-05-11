@@ -79,10 +79,12 @@ class MerchantStatus extends Model
 
     /**
      * @param string $approvedDatetime
+     * @return MerchantStatus
      */
-    public function setApprovedDatetime(string $approvedDatetime): void
+    public function setApprovedDatetime(string $approvedDatetime): MerchantStatus
     {
         $this->approvedDatetime = $approvedDatetime;
+        return $this;
     }
 
     /**
@@ -95,10 +97,12 @@ class MerchantStatus extends Model
 
     /**
      * @param string $boardedDatetime
+     * @return MerchantStatus
      */
-    public function setBoardedDatetime(string $boardedDatetime): void
+    public function setBoardedDatetime(string $boardedDatetime): MerchantStatus
     {
         $this->boardedDatetime = $boardedDatetime;
+        return $this;
     }
 
     /**
@@ -111,10 +115,12 @@ class MerchantStatus extends Model
 
     /**
      * @param string $cancelledDatetime
+     * @return MerchantStatus
      */
-    public function setCancelledDatetime(string $cancelledDatetime): void
+    public function setCancelledDatetime(string $cancelledDatetime): MerchantStatus
     {
         $this->cancelledDatetime = $cancelledDatetime;
+        return $this;
     }
 
     /**
@@ -127,10 +133,12 @@ class MerchantStatus extends Model
 
     /**
      * @param string $declinedDatetime
+     * @return MerchantStatus
      */
-    public function setDeclinedDatetime(string $declinedDatetime): void
+    public function setDeclinedDatetime(string $declinedDatetime): MerchantStatus
     {
         $this->declinedDatetime = $declinedDatetime;
+        return $this;
     }
 
     /**
@@ -143,10 +151,12 @@ class MerchantStatus extends Model
 
     /**
      * @param string $liveDatetime
+     * @return MerchantStatus
      */
-    public function setLiveDatetime(string $liveDatetime): void
+    public function setLiveDatetime(string $liveDatetime): MerchantStatus
     {
         $this->liveDatetime = $liveDatetime;
+        return $this;
     }
 
     /**
@@ -159,10 +169,12 @@ class MerchantStatus extends Model
 
     /**
      * @param bool $boardingProcessPendingFlg
+     * @return MerchantStatus
      */
-    public function setBoardingProcessPendingFlg(bool $boardingProcessPendingFlg): void
+    public function setBoardingProcessPendingFlg(bool $boardingProcessPendingFlg): MerchantStatus
     {
         $this->boardingProcessPendingFlg = $boardingProcessPendingFlg;
+        return $this;
     }
 
     /**
@@ -175,10 +187,12 @@ class MerchantStatus extends Model
 
     /**
      * @param string $boardingProcessStatusCd
+     * @return MerchantStatus
      */
-    public function setBoardingProcessStatusCd(string $boardingProcessStatusCd): void
+    public function setBoardingProcessStatusCd(string $boardingProcessStatusCd): MerchantStatus
     {
         $this->boardingProcessStatusCd = $boardingProcessStatusCd;
+        return $this;
     }
 
     /**
@@ -191,9 +205,11 @@ class MerchantStatus extends Model
 
     /**
      * @param string $gatewayBoardingStatusCd
+     * @return MerchantStatus
      */
-    public function setGatewayBoardingStatusCd(string $gatewayBoardingStatusCd): void
+    public function setGatewayBoardingStatusCd(string $gatewayBoardingStatusCd): MerchantStatus
     {
         $this->gatewayBoardingStatusCd = $gatewayBoardingStatusCd;
+        return $this;
     }
 }

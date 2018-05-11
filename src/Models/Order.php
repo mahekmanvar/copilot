@@ -169,10 +169,12 @@ class Order extends Model
 
     /**
      * @param int $orderId
+     * @return Order
      */
-    public function setOrderId(int $orderId): void
+    public function setOrderId(int $orderId): Order
     {
         $this->orderId = $orderId;
+        return $this;
     }
 
     /**
@@ -185,10 +187,12 @@ class Order extends Model
 
     /**
      * @param int $merchantId
+     * @return Order
      */
-    public function setMerchantId(int $merchantId): void
+    public function setMerchantId(int $merchantId): Order
     {
         $this->merchantId = $merchantId;
+        return $this;
     }
 
     /**
@@ -201,10 +205,12 @@ class Order extends Model
 
     /**
      * @param int $equipmentId
+     * @return Order
      */
-    public function setEquipmentId(int $equipmentId): void
+    public function setEquipmentId(int $equipmentId): Order
     {
         $this->equipmentId = $equipmentId;
+        return $this;
     }
 
     /**
@@ -217,10 +223,12 @@ class Order extends Model
 
     /**
      * @param int $orderNotes
+     * @return Order
      */
-    public function setOrderNotes(int $orderNotes): void
+    public function setOrderNotes(int $orderNotes): Order
     {
         $this->orderNotes = $orderNotes;
+        return $this;
     }
 
     /**
@@ -233,10 +241,12 @@ class Order extends Model
 
     /**
      * @param int $quantity
+     * @return Order
      */
-    public function setQuantity(int $quantity): void
+    public function setQuantity(int $quantity): Order
     {
         $this->quantity = $quantity;
+        return $this;
     }
 
     /**
@@ -249,10 +259,12 @@ class Order extends Model
 
     /**
      * @param float $unitPrice
+     * @return Order
      */
-    public function setUnitPrice(float $unitPrice): void
+    public function setUnitPrice(float $unitPrice): Order
     {
         $this->unitPrice = $unitPrice;
+        return $this;
     }
 
     /**
@@ -265,10 +277,12 @@ class Order extends Model
 
     /**
      * @param float $monthlyPrice
+     * @return Order
      */
-    public function setMonthlyPrice(float $monthlyPrice): void
+    public function setMonthlyPrice(float $monthlyPrice): Order
     {
         $this->monthlyPrice = $monthlyPrice;
+        return $this;
     }
 
     /**
@@ -281,10 +295,12 @@ class Order extends Model
 
     /**
      * @param string $billToCd
+     * @return Order
      */
-    public function setBillToCd(string $billToCd): void
+    public function setBillToCd(string $billToCd): Order
     {
         $this->billToCd = $billToCd;
+        return $this;
     }
 
     /**
@@ -297,10 +313,12 @@ class Order extends Model
 
     /**
      * @param string $billingFrequencyCd
+     * @return Order
      */
-    public function setBillingFrequencyCd(string $billingFrequencyCd): void
+    public function setBillingFrequencyCd(string $billingFrequencyCd): Order
     {
         $this->billingFrequencyCd = $billingFrequencyCd;
+        return $this;
     }
 
     /**
@@ -313,10 +331,12 @@ class Order extends Model
 
     /**
      * @param string $profileId
+     * @return Order
      */
-    public function setProfileId(string $profileId): void
+    public function setProfileId(string $profileId): Order
     {
         $this->profileId = $profileId;
+        return $this;
     }
 
     /**
@@ -329,10 +349,12 @@ class Order extends Model
 
     /**
      * @param int $acctId
+     * @return Order
      */
-    public function setAcctId(int $acctId): void
+    public function setAcctId(int $acctId): Order
     {
         $this->acctId = $acctId;
+        return $this;
     }
 
     /**
@@ -345,10 +367,12 @@ class Order extends Model
 
     /**
      * @param OrderShippingDetail $shippingDetails
+     * @return Order
      */
-    public function setShippingDetails(OrderShippingDetail $shippingDetails): void
+    public function setShippingDetails(OrderShippingDetail $shippingDetails): Order
     {
         $this->shippingDetails = $shippingDetails;
+        return $this;
     }
 
     /**
@@ -361,10 +385,12 @@ class Order extends Model
 
     /**
      * @param string $orderStatusCd
+     * @return Order
      */
-    public function setOrderStatusCd(string $orderStatusCd): void
+    public function setOrderStatusCd(string $orderStatusCd): Order
     {
         $this->orderStatusCd = $orderStatusCd;
+        return $this;
     }
 
     /**
@@ -377,10 +403,12 @@ class Order extends Model
 
     /**
      * @param string $placedDatetime
+     * @return Order
      */
-    public function setPlacedDatetime(string $placedDatetime): void
+    public function setPlacedDatetime(string $placedDatetime): Order
     {
         $this->placedDatetime = $placedDatetime;
+        return $this;
     }
 
     /**
@@ -393,10 +421,12 @@ class Order extends Model
 
     /**
      * @param string $shippedDatetime
+     * @return Order
      */
-    public function setShippedDatetime(string $shippedDatetime): void
+    public function setShippedDatetime(string $shippedDatetime): Order
     {
         $this->shippedDatetime = $shippedDatetime;
+        return $this;
     }
 
     /**
@@ -409,10 +439,12 @@ class Order extends Model
 
     /**
      * @param string $canceledDatetime
+     * @return Order
      */
-    public function setCanceledDatetime(string $canceledDatetime): void
+    public function setCanceledDatetime(string $canceledDatetime): Order
     {
         $this->canceledDatetime = $canceledDatetime;
+        return $this;
     }
 
     /**
@@ -425,9 +457,11 @@ class Order extends Model
 
     /**
      * @param string $fulfillingDatetime
+     * @return Order
      */
-    public function setFulfillingDatetime(string $fulfillingDatetime): void
+    public function setFulfillingDatetime(string $fulfillingDatetime): Order
     {
         $this->fulfillingDatetime = $fulfillingDatetime;
+        return $this;
     }
 }

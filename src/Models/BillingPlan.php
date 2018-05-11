@@ -168,10 +168,12 @@ class BillingPlan extends Model
 
     /**
      * @param int $billingPlanId
+     * @return BillingPlan
      */
-    public function setBillingPlanId(int $billingPlanId): void
+    public function setBillingPlanId(int $billingPlanId): BillingPlan
     {
         $this->billingPlanId = $billingPlanId;
+        return $this;
     }
 
     /**
@@ -184,10 +186,12 @@ class BillingPlan extends Model
 
     /**
      * @param int $merchId
+     * @return BillingPlan
      */
-    public function setMerchId(int $merchId): void
+    public function setMerchId(int $merchId): BillingPlan
     {
         $this->merchId = $merchId;
+        return $this;
     }
 
     /**
@@ -200,10 +204,12 @@ class BillingPlan extends Model
 
     /**
      * @param int $profileId
+     * @return BillingPlan
      */
-    public function setProfileId(int $profileId): void
+    public function setProfileId(int $profileId): BillingPlan
     {
         $this->profileId = $profileId;
+        return $this;
     }
 
     /**
@@ -216,10 +222,12 @@ class BillingPlan extends Model
 
     /**
      * @param string $acctId
+     * @return BillingPlan
      */
-    public function setAcctId(string $acctId): void
+    public function setAcctId(string $acctId): BillingPlan
     {
         $this->acctId = $acctId;
+        return $this;
     }
 
     /**
@@ -232,10 +240,12 @@ class BillingPlan extends Model
 
     /**
      * @param float $amount
+     * @return BillingPlan
      */
-    public function setAmount(float $amount): void
+    public function setAmount(float $amount): BillingPlan
     {
         $this->amount = $amount;
+        return $this;
     }
 
     /**
@@ -248,10 +258,12 @@ class BillingPlan extends Model
 
     /**
      * @param int $timeSpan
+     * @return BillingPlan
      */
-    public function setTimeSpan(int $timeSpan): void
+    public function setTimeSpan(int $timeSpan): BillingPlan
     {
         $this->timeSpan = $timeSpan;
+        return $this;
     }
 
     /**
@@ -264,10 +276,12 @@ class BillingPlan extends Model
 
     /**
      * @param int $every
+     * @return BillingPlan
      */
-    public function setEvery(int $every): void
+    public function setEvery(int $every): BillingPlan
     {
         $this->every = $every;
+        return $this;
     }
 
     /**
@@ -280,10 +294,12 @@ class BillingPlan extends Model
 
     /**
      * @param string $untilCondition
+     * @return BillingPlan
      */
-    public function setUntilCondition(string $untilCondition): void
+    public function setUntilCondition(string $untilCondition): BillingPlan
     {
         $this->untilCondition = $untilCondition;
+        return $this;
     }
 
     /**
@@ -296,10 +312,12 @@ class BillingPlan extends Model
 
     /**
      * @param int $untilNumPayments
+     * @return BillingPlan
      */
-    public function setUntilNumPayments(int $untilNumPayments): void
+    public function setUntilNumPayments(int $untilNumPayments): BillingPlan
     {
         $this->untilNumPayments = $untilNumPayments;
+        return $this;
     }
 
     /**
@@ -312,10 +330,12 @@ class BillingPlan extends Model
 
     /**
      * @param String $untilDate
+     * @return BillingPlan
      */
-    public function setUntilDate(String $untilDate): void
+    public function setUntilDate(String $untilDate): BillingPlan
     {
         $this->untilDate = $untilDate;
+        return $this;
     }
 
     /**
@@ -328,10 +348,12 @@ class BillingPlan extends Model
 
     /**
      * @param string $currencySymbol
+     * @return BillingPlan
      */
-    public function setCurrencySymbol(string $currencySymbol): void
+    public function setCurrencySymbol(string $currencySymbol): BillingPlan
     {
         $this->currencySymbol = $currencySymbol;
+        return $this;
     }
 
     /**
@@ -344,10 +366,12 @@ class BillingPlan extends Model
 
     /**
      * @param string $startDate
+     * @return BillingPlan
      */
-    public function setStartDate(string $startDate): void
+    public function setStartDate(string $startDate): BillingPlan
     {
         $this->startDate = $startDate;
+        return $this;
     }
 
     /**
@@ -360,10 +384,12 @@ class BillingPlan extends Model
 
     /**
      * @param array $options
+     * @return BillingPlan
      */
-    public function setOptions(array $options): void
+    public function setOptions(array $options): BillingPlan
     {
         $this->options = $options;
+        return $this;
     }
 
     /**
@@ -376,10 +402,12 @@ class BillingPlan extends Model
 
     /**
      * @param string $planSatus
+     * @return BillingPlan
      */
-    public function setPlanSatus(string $planSatus): void
+    public function setPlanSatus(string $planSatus): BillingPlan
     {
         $this->planSatus = $planSatus;
+        return $this;
     }
 
     /**
@@ -392,9 +420,11 @@ class BillingPlan extends Model
 
     /**
      * @param array $billingPlanSchedules
+     * @return BillingPlan
      */
-    public function setBillingPlanSchedules(array $billingPlanSchedules): void
+    public function setBillingPlanSchedules(array $billingPlanSchedules): BillingPlan
     {
         $this->billingPlanSchedules = $billingPlanSchedules;
+        return $this;
     }
 }

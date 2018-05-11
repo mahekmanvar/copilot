@@ -28,10 +28,12 @@ class Pricing extends Model
 
     /**
      * @param FlatPricing $flatPricing
+     * @return Pricing
      */
-    public function setFlatPricing(FlatPricing $flatPricing): void
+    public function setFlatPricing(FlatPricing $flatPricing): Pricing
     {
         $this->flatPricing = $flatPricing;
+        return $this;
     }
 
     /**
@@ -44,9 +46,11 @@ class Pricing extends Model
 
     /**
      * @param ICPlusPricing $icPlusPricing
+     * @return Pricing
      */
-    public function setIcPlusPricing(ICPlusPricing $icPlusPricing): void
+    public function setIcPlusPricing(ICPlusPricing $icPlusPricing): TYPE_NAME
     {
         $this->icPlusPricing = $icPlusPricing;
+        return $this;
     }
 }

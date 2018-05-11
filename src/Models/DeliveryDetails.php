@@ -46,10 +46,12 @@ class DeliveryDetails extends Model
 
     /**
      * @param int $dlvry0To7DaysPct
+     * @return DeliveryDetails
      */
-    public function setDlvry0To7DaysPct(int $dlvry0To7DaysPct): void
+    public function setDlvry0To7DaysPct(int $dlvry0To7DaysPct): DeliveryDetails
     {
         $this->dlvry0To7DaysPct = $dlvry0To7DaysPct;
+        return $this;
     }
 
     /**
@@ -62,10 +64,12 @@ class DeliveryDetails extends Model
 
     /**
      * @param int $dlvry15To30DaysPct
+     * @return DeliveryDetails
      */
-    public function setDlvry15To30DaysPct(int $dlvry15To30DaysPct): void
+    public function setDlvry15To30DaysPct(int $dlvry15To30DaysPct): DeliveryDetails
     {
         $this->dlvry15To30DaysPct = $dlvry15To30DaysPct;
+        return $this;
     }
 
     /**
@@ -78,10 +82,12 @@ class DeliveryDetails extends Model
 
     /**
      * @param int $dlvry8To14DaysPct
+     * @return DeliveryDetails
      */
-    public function setDlvry8To14DaysPct(int $dlvry8To14DaysPct): void
+    public function setDlvry8To14DaysPct(int $dlvry8To14DaysPct): DeliveryDetails
     {
         $this->dlvry8To14DaysPct = $dlvry8To14DaysPct;
+        return $this;
     }
 
     /**
@@ -94,9 +100,11 @@ class DeliveryDetails extends Model
 
     /**
      * @param int $dlvryOver30DaysPct
+     * @return DeliveryDetails
      */
-    public function setDlvryOver30DaysPct(int $dlvryOver30DaysPct): void
+    public function setDlvryOver30DaysPct(int $dlvryOver30DaysPct): DeliveryDetails
     {
         $this->dlvryOver30DaysPct = $dlvryOver30DaysPct;
+        return $this;
     }
 }

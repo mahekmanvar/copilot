@@ -64,10 +64,12 @@ class BusinessDetails extends Model
 
     /**
      * @param bool $customerBillPriorToShipFlg
+     * @return BusinessDetails
      */
-    public function setCustomerBillPriorToShipFlg(bool $customerBillPriorToShipFlg): void
+    public function setCustomerBillPriorToShipFlg(bool $customerBillPriorToShipFlg): BusinessDetails
     {
         $this->customerBillPriorToShipFlg = $customerBillPriorToShipFlg;
+        return $this;
     }
 
     /**
@@ -80,10 +82,12 @@ class BusinessDetails extends Model
 
     /**
      * @param bool $depositReqForFulfillFlg
+     * @return BusinessDetails
      */
-    public function setDepositReqForFulfillFlg(bool $depositReqForFulfillFlg): void
+    public function setDepositReqForFulfillFlg(bool $depositReqForFulfillFlg): BusinessDetails
     {
         $this->depositReqForFulfillFlg = $depositReqForFulfillFlg;
+        return $this;
     }
 
     /**
@@ -96,10 +100,12 @@ class BusinessDetails extends Model
 
     /**
      * @param string $whenCustomerChargedCd
+     * @return BusinessDetails
      */
-    public function setWhenCustomerChargedCd(string $whenCustomerChargedCd): void
+    public function setWhenCustomerChargedCd(string $whenCustomerChargedCd): BusinessDetails
     {
         $this->whenCustomerChargedCd = $whenCustomerChargedCd;
+        return $this;
     }
 
     /**
@@ -112,10 +118,12 @@ class BusinessDetails extends Model
 
     /**
      * @param string $refundPolicyCd
+     * @return BusinessDetails
      */
-    public function setRefundPolicyCd(string $refundPolicyCd): void
+    public function setRefundPolicyCd(string $refundPolicyCd): BusinessDetails
     {
         $this->refundPolicyCd = $refundPolicyCd;
+        return $this;
     }
 
     /**
@@ -128,9 +136,11 @@ class BusinessDetails extends Model
 
     /**
      * @param string $serviceProvidedInCd
+     * @return BusinessDetails
      */
-    public function setServiceProvidedInCd(string $serviceProvidedInCd): void
+    public function setServiceProvidedInCd(string $serviceProvidedInCd): BusinessDetails
     {
         $this->serviceProvidedInCd = $serviceProvidedInCd;
+        return $this;
     }
 }

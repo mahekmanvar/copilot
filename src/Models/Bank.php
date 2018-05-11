@@ -49,10 +49,12 @@ class Bank extends Model
 
     /**
      * @param string $bankAcctNum
+     * @return Bank
      */
-    public function setBankAcctNum(string $bankAcctNum): void
+    public function setBankAcctNum(string $bankAcctNum): Bank
     {
         $this->bankAcctNum = $bankAcctNum;
+        return $this;
     }
 
     /**
@@ -65,10 +67,12 @@ class Bank extends Model
 
     /**
      * @param string $bankRoutingNum
+     * @return Bank
      */
-    public function setBankRoutingNum(string $bankRoutingNum): void
+    public function setBankRoutingNum(string $bankRoutingNum): Bank
     {
         $this->bankRoutingNum = $bankRoutingNum;
+        return $this;
     }
 
     /**
@@ -81,10 +85,12 @@ class Bank extends Model
 
     /**
      * @param string $bankAcctTypeCd
+     * @return Bank
      */
-    public function setBankAcctTypeCd(string $bankAcctTypeCd): void
+    public function setBankAcctTypeCd(string $bankAcctTypeCd): Bank
     {
         $this->bankAcctTypeCd = $bankAcctTypeCd;
+        return $this;
     }
 
     /**
@@ -97,9 +103,11 @@ class Bank extends Model
 
     /**
      * @param string $bankName
+     * @return Bank
      */
-    public function setBankName(string $bankName): void
+    public function setBankName(string $bankName): Bank
     {
         $this->bankName = $bankName;
+        return $this;
     }
 }

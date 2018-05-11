@@ -168,10 +168,12 @@ class Fee extends Model
 
     /**
      * @param float $achBatchFee
+     * @return Fee
      */
-    public function setAchBatchFee(float $achBatchFee): void
+    public function setAchBatchFee(float $achBatchFee): Fee
     {
         $this->achBatchFee = $achBatchFee;
+        return $this;
     }
 
     /**
@@ -184,10 +186,12 @@ class Fee extends Model
 
     /**
      * @param float $addressVerifFee
+     * @return Fee
      */
-    public function setAddressVerifFee(float $addressVerifFee): void
+    public function setAddressVerifFee(float $addressVerifFee): Fee
     {
         $this->addressVerifFee = $addressVerifFee;
+        return $this;
     }
 
     /**
@@ -200,10 +204,12 @@ class Fee extends Model
 
     /**
      * @param float $annualMembershipFee
+     * @return Fee
      */
-    public function setAnnualMembershipFee(float $annualMembershipFee): void
+    public function setAnnualMembershipFee(float $annualMembershipFee): Fee
     {
         $this->annualMembershipFee = $annualMembershipFee;
+        return $this;
     }
 
     /**
@@ -216,10 +222,12 @@ class Fee extends Model
 
     /**
      * @param float $appFee
+     * @return Fee
      */
-    public function setAppFee(float $appFee): void
+    public function setAppFee(float $appFee): Fee
     {
         $this->appFee = $appFee;
+        return $this;
     }
 
     /**
@@ -232,10 +240,12 @@ class Fee extends Model
 
     /**
      * @param float $authFee
+     * @return Fee
      */
-    public function setAuthFee(float $authFee): void
+    public function setAuthFee(float $authFee): Fee
     {
         $this->authFee = $authFee;
+        return $this;
     }
 
     /**
@@ -248,10 +258,12 @@ class Fee extends Model
 
     /**
      * @param float $chargebackFee
+     * @return Fee
      */
-    public function setChargebackFee(float $chargebackFee): void
+    public function setChargebackFee(float $chargebackFee): Fee
     {
         $this->chargebackFee = $chargebackFee;
+        return $this;
     }
 
     /**
@@ -264,10 +276,12 @@ class Fee extends Model
 
     /**
      * @param float $dataBreachFee
+     * @return Fee
      */
-    public function setDataBreachFee(float $dataBreachFee): void
+    public function setDataBreachFee(float $dataBreachFee): Fee
     {
         $this->dataBreachFee = $dataBreachFee;
+        return $this;
     }
 
     /**
@@ -280,10 +294,12 @@ class Fee extends Model
 
     /**
      * @param float $ddaRejectFee
+     * @return Fee
      */
-    public function setDdaRejectFee(float $ddaRejectFee): void
+    public function setDdaRejectFee(float $ddaRejectFee): Fee
     {
         $this->ddaRejectFee = $ddaRejectFee;
+        return $this;
     }
 
     /**
@@ -296,10 +312,12 @@ class Fee extends Model
 
     /**
      * @param float $earlyCancelFee
+     * @return Fee
      */
-    public function setEarlyCancelFee(float $earlyCancelFee): void
+    public function setEarlyCancelFee(float $earlyCancelFee): Fee
     {
         $this->earlyCancelFee = $earlyCancelFee;
+        return $this;
     }
 
     /**
@@ -312,10 +330,12 @@ class Fee extends Model
 
     /**
      * @param float $minProcessFee
+     * @return Fee
      */
-    public function setMinProcessFee(float $minProcessFee): void
+    public function setMinProcessFee(float $minProcessFee): Fee
     {
         $this->minProcessFee = $minProcessFee;
+        return $this;
     }
 
     /**
@@ -328,10 +348,12 @@ class Fee extends Model
 
     /**
      * @param float $monthlyEquipmentRentalFee
+     * @return Fee
      */
-    public function setMonthlyEquipmentRentalFee(float $monthlyEquipmentRentalFee): void
+    public function setMonthlyEquipmentRentalFee(float $monthlyEquipmentRentalFee): Fee
     {
         $this->monthlyEquipmentRentalFee = $monthlyEquipmentRentalFee;
+        return $this;
     }
 
     /**
@@ -344,10 +366,12 @@ class Fee extends Model
 
     /**
      * @param float $pciAnnualFee
+     * @return Fee
      */
-    public function setPciAnnualFee(float $pciAnnualFee): void
+    public function setPciAnnualFee(float $pciAnnualFee): Fee
     {
         $this->pciAnnualFee = $pciAnnualFee;
+        return $this;
     }
 
     /**
@@ -360,10 +384,12 @@ class Fee extends Model
 
     /**
      * @param float $pciNonComplianceFee
+     * @return Fee
      */
-    public function setPciNonComplianceFee(float $pciNonComplianceFee): void
+    public function setPciNonComplianceFee(float $pciNonComplianceFee): Fee
     {
         $this->pciNonComplianceFee = $pciNonComplianceFee;
+        return $this;
     }
 
     /**
@@ -376,10 +402,12 @@ class Fee extends Model
 
     /**
      * @param float $regProdMonthlyFee
+     * @return Fee
      */
-    public function setRegProdMonthlyFee(float $regProdMonthlyFee): void
+    public function setRegProdMonthlyFee(float $regProdMonthlyFee): Fee
     {
         $this->regProdMonthlyFee = $regProdMonthlyFee;
+        return $this;
     }
 
     /**
@@ -392,10 +420,12 @@ class Fee extends Model
 
     /**
      * @param float $retrievalFee
+     * @return Fee
      */
-    public function setRetrievalFee(float $retrievalFee): void
+    public function setRetrievalFee(float $retrievalFee): Fee
     {
         $this->retrievalFee = $retrievalFee;
+        return $this;
     }
 
     /**
@@ -408,10 +438,12 @@ class Fee extends Model
 
     /**
      * @param float $statementFee
+     * @return Fee
      */
-    public function setStatementFee(float $statementFee): void
+    public function setStatementFee(float $statementFee): Fee
     {
         $this->statementFee = $statementFee;
+        return $this;
     }
 
     /**
@@ -424,10 +456,12 @@ class Fee extends Model
 
     /**
      * @param float $transactionFee
+     * @return Fee
      */
-    public function setTransactionFee(float $transactionFee): void
+    public function setTransactionFee(float $transactionFee): Fee
     {
         $this->transactionFee = $transactionFee;
+        return $this;
     }
 
     /**
@@ -440,10 +474,12 @@ class Fee extends Model
 
     /**
      * @param float $voiceAuthFee
+     * @return Fee
      */
-    public function setVoiceAuthFee(float $voiceAuthFee): void
+    public function setVoiceAuthFee(float $voiceAuthFee): Fee
     {
         $this->voiceAuthFee = $voiceAuthFee;
+        return $this;
     }
 
     /**
@@ -456,10 +492,12 @@ class Fee extends Model
 
     /**
      * @param float $wirelessActivationFee
+     * @return Fee
      */
-    public function setWirelessActivationFee(float $wirelessActivationFee): void
+    public function setWirelessActivationFee(float $wirelessActivationFee): Fee
     {
         $this->wirelessActivationFee = $wirelessActivationFee;
+        return $this;
     }
 
     /**
@@ -472,10 +510,12 @@ class Fee extends Model
 
     /**
      * @param float $wirelessFee
+     * @return Fee
      */
-    public function setWirelessFee(float $wirelessFee): void
+    public function setWirelessFee(float $wirelessFee): Fee
     {
         $this->wirelessFee = $wirelessFee;
+        return $this;
     }
 
     /**
@@ -488,10 +528,12 @@ class Fee extends Model
 
     /**
      * @param bool $duesAndAssessmentsFlg
+     * @return Fee
      */
-    public function setDuesAndAssessmentsFlg(bool $duesAndAssessmentsFlg): void
+    public function setDuesAndAssessmentsFlg(bool $duesAndAssessmentsFlg): Fee
     {
         $this->duesAndAssessmentsFlg = $duesAndAssessmentsFlg;
+        return $this;
     }
 
     /**
@@ -504,9 +546,11 @@ class Fee extends Model
 
     /**
      * @param bool $passthruInterchgCostsFlg
+     * @return Fee
      */
-    public function setPassthruInterchgCostsFlg(bool $passthruInterchgCostsFlg): void
+    public function setPassthruInterchgCostsFlg(bool $passthruInterchgCostsFlg): Fee
     {
         $this->passthruInterchgCostsFlg = $passthruInterchgCostsFlg;
+        return $this;
     }
 }

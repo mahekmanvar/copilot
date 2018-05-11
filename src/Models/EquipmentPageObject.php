@@ -58,10 +58,12 @@ class EquipmentPageObject extends Model
 
     /**
      * @param int $totalServerItemsCount
+     * @return EquipmentPageObject
      */
-    public function setTotalServerItemsCount(int $totalServerItemsCount): void
+    public function setTotalServerItemsCount(int $totalServerItemsCount): EquipmentPageObject
     {
         $this->totalServerItemsCount = $totalServerItemsCount;
+        return $this;
     }
 
     /**
@@ -74,10 +76,12 @@ class EquipmentPageObject extends Model
 
     /**
      * @param int $totalDisplayItemsCount
+     * @return EquipmentPageObject
      */
-    public function setTotalDisplayItemsCount(int $totalDisplayItemsCount): void
+    public function setTotalDisplayItemsCount(int $totalDisplayItemsCount): EquipmentPageObject
     {
         $this->totalDisplayItemsCount = $totalDisplayItemsCount;
+        return $this;
     }
 
     /**
@@ -90,10 +94,12 @@ class EquipmentPageObject extends Model
 
     /**
      * @param bool $moreRowsAvailable
+     * @return EquipmentPageObject
      */
-    public function setMoreRowsAvailable(bool $moreRowsAvailable): void
+    public function setMoreRowsAvailable(bool $moreRowsAvailable): EquipmentPageObject
     {
         $this->moreRowsAvailable = $moreRowsAvailable;
+        return $this;
     }
 
     /**
@@ -106,10 +112,12 @@ class EquipmentPageObject extends Model
 
     /**
      * @param mixed $columnSums
+     * @return EquipmentPageObject
      */
-    public function setColumnSums($columnSums): void
+    public function setColumnSums($columnSums): EquipmentPageObject
     {
         $this->columnSums = $columnSums;
+        return $this;
     }
 
     protected function populateDefinition($name, $newValue, $oldValue)

@@ -35,10 +35,12 @@ class VolumeDetails extends Model
 
     /**
      * @param float $averageMonthlyVolume
+     * @return VolumeDetails
      */
-    public function setAverageMonthlyVolume(float $averageMonthlyVolume): void
+    public function setAverageMonthlyVolume(float $averageMonthlyVolume): VolumeDetails
     {
         $this->averageMonthlyVolume = $averageMonthlyVolume;
+        return $this;
     }
 
     /**
@@ -51,10 +53,12 @@ class VolumeDetails extends Model
 
     /**
      * @param float $highTicketAmount
+     * @return VolumeDetails
      */
-    public function setHighTicketAmount(float $highTicketAmount): void
+    public function setHighTicketAmount(float $highTicketAmount): VolumeDetails
     {
         $this->highTicketAmount = $highTicketAmount;
+        return $this;
     }
 
     /**
@@ -67,9 +71,11 @@ class VolumeDetails extends Model
 
     /**
      * @param float $averageTicketAmount
+     * @return VolumeDetails
      */
-    public function setAverageTicketAmount(float $averageTicketAmount): void
+    public function setAverageTicketAmount(float $averageTicketAmount): VolumeDetails
     {
         $this->averageTicketAmount = $averageTicketAmount;
+        return $this;
     }
 }
