@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+[![Total Downloads](https://poser.pugx.org/guesl/copilot/downloads)](https://packagist.org/packages/guesl/copilot)
 <a href="https://packagist.org/packages/guesl/copilot"><img src="https://poser.pugx.org/guesl/copilot/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/guesl/copilot"><img src="https://poser.pugx.org/guesl/copilot/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/guesl/copilot"><img src="https://poser.pugx.org/guesl/copilot/license.svg" alt="License"></a>
